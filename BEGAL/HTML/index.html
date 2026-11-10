@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 3 — Box Model & Layouts</title>
+  <!-- Link to the external CSS stylesheet -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Header Section -->
+    <header class="header">
+      <!-- Requirement 1 & 4: Header title with inline <span> styling -->
+      <h1>IT Portfolio <span class="highlight">Lab 3</span></h1>
+    </header>
+
+    <!-- Main Content Area (Two-Column Flexbox Layout) -->
+    <main class="main-area">
+      
+      <!-- Left Column / Primary Content -->
+      <section class="content">
+        
+        <!-- Requirement 2 & 5: Profile Card demonstrating Box Model -->
+        <div class="profile-card">
+          <!-- Profile Image (Uses placeholder if local profile.jpg is missing) -->
+          <img src="../IMAGES/Profile.png" alt="Arsh Begal" class="avatar" onerror="this.src='https://via.placeholder.com/96';" />
+          
+          <div class="profile-info">
+            <h2>Arsh Begal</h2>
+            <!-- Assessment Task 4: Additional words highlighted using <span class="highlight"> -->
+            <p class="tagline"><span class="highlight">BSIT Student</span> & Aspiring <span class="highlight">Software Engineer</span></p>
+            <p class="bio">
+              An aspiring Full Stack Software Engineer interested in <span class="highlight">programming</span>, technology, software development, and creating innovative solutions.
+            </p>
+            <button class="contact-btn">Contact</button>
+          </div>
+        </div>
+
+        <!-- Requirement 3: About Section -->
+        <article class="description">
+          <h3>About This Lab</h3>
+          <p>
+            This section demonstrates the fundamental concepts of the <strong>CSS Box Model</strong> (content, padding, border, and margin) as well as modern responsive layouts using <strong>CSS Flexbox</strong> and media queries.
+          </p>
+        </article>
+
+      </section>
+
+      <!-- Right Column / Sidebar Section -->
+      <aside class="sidebar">
+        <!-- Requirement 4: Quick Links Sidebar -->
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Module 9</a></li>
+          <li><a href="#">Module 10</a></li>
+          <li><a href="#">Module 12</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <!-- Requirement 5: Centered copyright notice -->
+      <p>&copy; 2026 — ITC Portfolio Lab 3</p>
+    </footer>
+
+  </div>
+</body>
+</html>
